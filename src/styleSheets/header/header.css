@@ -1,0 +1,61 @@
+.header-class {
+    width: 100vw;
+    height: 180px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #000000;
+
+    .logo-page {
+        padding-left: 76px;
+        padding-top: 43px;
+    }
+
+    .header-contacts {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        top: 3.5%;
+        right: 0%;
+        border-radius: 5em 0 0 0em;
+        box-shadow: 0 0 0 0.2em #f7b100;
+        background-color: #E5E5E5;
+
+        .container-row {
+            height: 100px;
+            padding: 10px;
+            padding-top: 20px;
+            padding-left: 10px;
+
+            .container-column {
+                --border: 2px solid brown;
+                float: left;
+                height: 100%;
+            }
+
+            .container-column-width {
+                --border: 2px solid blue;
+                float: left;
+                height: 100%;
+                text-align-last: start;
+                margin-left: 8px;
+
+                .title-text {
+                    font-size: 12pt;
+                    color: #f7b100;
+                    font-weight: bold;
+                    text-align: left;
+                }
+
+                .subtitle-text {
+                    font-size: 10pt;
+                    font-weight: bold;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+
+
+    }
+}
