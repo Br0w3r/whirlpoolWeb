@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SingleHeader from './components/header/header';
 import SingleNavBar from './components/navBar/navBar';
 import Home from './pages/home/home';
-
+import Services from './pages/services/services';
+import Contact from './pages/contact/contact';
 
 function App() {
   return (
@@ -13,6 +14,12 @@ function App() {
       <SingleNavBar />
       <Routes>
         <Route path='/' Component={Home} />
+      </Routes>
+      <Routes>
+        <Route path='/services' Component={Services} />
+      </Routes>
+      <Routes>
+        <Route path='/contact' Component={Contact} />
       </Routes>
     </BrowserRouter>
   );

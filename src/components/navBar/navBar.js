@@ -6,32 +6,35 @@ function SingleNavBar() {
     return (
         <div className="navBar-container">
 
-            <li className="navBar-margin">
-                <NavLink
-                    className="nav-link"
-                    to="/"
-                >
-                    Inicio
-                </NavLink>
-            </li>
+            <div className="navBar-options">
+                <li className="navBar-margin">
+                    <NavLink
+                        className="nav-link"
+                        to="/"
+                    >
+                        Inicio
+                    </NavLink>
+                </li>
 
-            <li className="navBar-margin">
-                <NavLink
-                    className="nav-link"
-                    to="/services"
-                >
-                    Servicios
-                </NavLink>
-            </li>
+                <li className="navBar-margin">
+                    <NavLink
+                        className="nav-link"
+                        to="/services"
+                    >
+                        Servicios
+                    </NavLink>
+                </li>
 
-            <li className="navBar-margin">
-                <NavLink
-                    className="nav-link"
-                    to="/contact"
-                >
-                    Contacto
-                </NavLink>
-            </li>
+                <li className="navBar-margin">
+                    <NavLink
+                        className="nav-link"
+                        to="/contact"
+                    >
+                        Solicitar Visita Técnica
+                    </NavLink>
+                </li>
+
+            </div>
 
         </div>
     );
