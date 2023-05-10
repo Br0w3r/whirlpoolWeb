@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 import { RxDividerVertical } from 'react-icons/rx';
 
 
-function Header() {
+function SingleHeader() {
   return (
     //#region BackGround Header
     <div className="header-class">
@@ -83,4 +83,4 @@ function ContainerContacst() {
   );
 }
 
-export default Header;
+export default SingleHeader;

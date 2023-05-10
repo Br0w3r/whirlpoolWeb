@@ -1,16 +1,20 @@
 import './App.css';
-import Header from './components/header/header';
-import SingleAppBar from './components/appBar/appBar';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SingleHeader from './components/header/header';
+import SingleNavBar from './components/navBar/navBar';
+import Home from './pages/home/home';
 
 
 function App() {
   return (
-    <div className="App">
-      <div className='container-header'>
-        <Header />
-        <SingleAppBar />
-      </div>
-    </div>
+    <BrowserRouter>
+      <SingleHeader />
+      <SingleNavBar />
+      <Routes>
+        <Route path='/' Component={Home} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
