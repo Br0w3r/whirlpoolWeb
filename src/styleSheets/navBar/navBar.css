@@ -25,6 +25,9 @@
                 font-size: 11.8pt;
                 text-align: center;
                 text-decoration: none;
+                border-radius: 15px 50px;
+                background: #f7b100;
+                padding: 8px;
             }
 
         }
