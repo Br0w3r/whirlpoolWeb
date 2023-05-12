@@ -6,7 +6,7 @@
     background-color: #000000;
 
     .navBar-options {
-        display: flex;
+        display: flex !important;
         padding-left: 80px;
         padding-bottom: 20px;
 

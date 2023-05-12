@@ -13,7 +13,7 @@ function App() {
       <SingleHeader />
       <SingleNavBar />
       <Routes>
-        <Route path='/' Component={Home} />
+        <Route path='/home' Component={Home} />
       </Routes>
       <Routes>
         <Route path='/services' Component={Services} />
