@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/whirlpoolWeb/static/css/main.584272f3.css",
-    "main.js": "/whirlpoolWeb/static/js/main.40b98081.js",
+    "main.js": "/whirlpoolWeb/static/js/main.712ad6d9.js",
     "static/media/logo-whir.png": "/whirlpoolWeb/static/media/logo-whir.985a348ee3cba342bbac.png",
     "index.html": "/whirlpoolWeb/index.html",
     "main.584272f3.css.map": "/whirlpoolWeb/static/css/main.584272f3.css.map",
-    "main.40b98081.js.map": "/whirlpoolWeb/static/js/main.40b98081.js.map"
+    "main.712ad6d9.js.map": "/whirlpoolWeb/static/js/main.712ad6d9.js.map"
   },
   "entrypoints": [
     "static/css/main.584272f3.css",
-    "static/js/main.40b98081.js"
+    "static/js/main.712ad6d9.js"
   ]
 }
