@@ -9,11 +9,11 @@ import Contact from './pages/contact/contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/whirlpoolWeb'>
       <SingleHeader />
       <SingleNavBar />
       <Routes>
-        <Route path='/home' Component={Home} />
+        <Route path='/' Component={Home} />
       </Routes>
       <Routes>
         <Route path='/services' Component={Services} />
