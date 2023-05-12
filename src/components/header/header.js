@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styleSheets/header/header.css';
+import './header.css';
 import { FaWhatsapp } from 'react-icons/fa';
 import { BsFillPhoneVibrateFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md'
@@ -11,11 +11,12 @@ function SingleHeader() {
     //#region BackGround Header
     <div className="header-class">
 
+      {/*
       <img
         className="logo-page"
         src={require('../../images/logo-whir.png')}
         alt="Logo"
-      />
+      />*/}
 
       {/*Container Contacts*/}
       <ContainerContacst />

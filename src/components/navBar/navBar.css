@@ -16,7 +16,10 @@
             cursor: pointer;
             align-items: center;
             text-decoration: none;
-            padding: 0 1.7rem;
+            padding: 5px 1.7rem;
+            border-radius: 15px 50px;
+            background: #f7b100;
+            margin-left: 25px;
 
             .nav-link {
                 display: flex;
@@ -25,11 +28,16 @@
                 font-size: 11.8pt;
                 text-align: center;
                 text-decoration: none;
-                border-radius: 15px 50px;
-                background: #f7b100;
-                padding: 8px;
             }
+        }
 
+
+        .navBar-margin:hover {
+            background-color: #FF8F00;
+
+            .nav-link {
+                color: white;
+            }
         }
     }
 

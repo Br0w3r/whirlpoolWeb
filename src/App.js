@@ -10,8 +10,8 @@ import Contact from './pages/contact/contact';
 function App() {
   return (
     <BrowserRouter>
-      <SingleHeader />
-      <SingleNavBar />
+      {/*<SingleHeader />
+      <SingleNavBar />*/}
       <Routes>
         <Route path='/' Component={Home} />
       </Routes>

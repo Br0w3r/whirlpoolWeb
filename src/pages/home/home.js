@@ -1,8 +1,10 @@
 import React from "react";
+import './home.scss';
+import Carrousel from './carrousel/carrousel.js';
 
 function Home() {
     return (
-        <p>Home Page</p>
+        <Carrousel />
     );
 }
 
