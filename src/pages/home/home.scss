@@ -1,0 +1,30 @@
+.principal {
+    display: contents;
+    position: relative;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .carrousel {
+
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 3vmin;
+
+
+        background: #eff5f5;
+        color: #fff;
+        overflow: hidden;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

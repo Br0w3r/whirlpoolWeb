@@ -1,12 +1,14 @@
 import React from "react";
 import './carrousel.scss';
-import './carrousel.controller';
+import ComponentCarrousel from './carrousel.controller';
 
 
 function Carrousel() {
-    (
-        <p></p>
-    );
+  return (
+    <div>
+      <ComponentCarrousel />
+    </div>
+  );
 }
 
 

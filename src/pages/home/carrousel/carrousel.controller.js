@@ -1,41 +1,41 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 const slides = [
     {
-        title: "Machu Picchu",
-        subtitle: "Peru",
-        description: "Adventure is never far away",
+        title: "Reparaciónes",
+        subtitle: "Urgentes",
+        description: "Reparaciónes urgentes en 24 hrs",
         image:
-            "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+            "https://www.serviciotecnicowhirlpoolcdmx.com.mx/centro_de_servicio_tecnico_whirlpool/servicio_tecnico_whirlpool_en_la_cdmx.jpg"
     },
     {
-        title: "Chamonix",
-        subtitle: "France",
-        description: "Let your dreams come true",
+        title: "Reparación de",
+        subtitle: "Linea Blanca",
+        description: "Los mejores técnicos a tu disposición.",
         image:
-            "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+            "https://i.postimg.cc/QNKTDCfD/lavadora.jpg"
     },
     {
-        title: "Mimisa Rocks",
-        subtitle: "Australia",
-        description: "A piece of heaven",
+        title: "Atención al cliente",
+        subtitle: "24 hrs",
+        description: "Ofrecemos una espectacular atención al cliente.",
         image:
-            "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+            "https://www.centrodeserviciowhirlpoolenmexico.com.mx/centro_de_servicio_tecnico_whirlpool_cdmx/reparacion_de_refrigeradores_whirlpool_en_la_ciudad_de_mexico.jpg"
+    },
+    
+    {
+        title: "Garantía Por",
+        subtitle: "ESCRITO",
+        description: "Nosotros te brindamos garantía por escrito.",
+        image:
+            "https://i.postimg.cc/6Q5NV78G/garantia.png"
     },
     {
-        title: "Four",
-        subtitle: "Australia",
-        description: "A piece of heaven",
+        title: "Asisténcia",
+        subtitle: "Técnica",
+        description: "Detallamos todos los desperfectos de su equipo.",
         image:
-            "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-    },
-    {
-        title: "Five",
-        subtitle: "Australia",
-        description: "A piece of heaven",
-        image:
-            "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+            "https://i.postimg.cc/wMj4tJMw/servicio.jpg"
     }
 ];
 
@@ -89,14 +89,14 @@ const slidesReducer = (state, event) => {
     if (event.type === "NEXT") {
         return {
             ...state,
-            slideIndex: (state.slideIndex + 1) % slides.length
+            slideIndex:
+                state.slideIndex === 0 ? slides.length - 1 : state.slideIndex - 1
         };
     }
     if (event.type === "PREV") {
         return {
             ...state,
-            slideIndex:
-                state.slideIndex === 0 ? slides.length - 1 : state.slideIndex - 1
+            slideIndex: (state.slideIndex + 1) % slides.length
         };
     }
 };
@@ -115,12 +115,6 @@ function Slide({ slide, offset }) {
                 "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
             }}
         >
-            <div
-                className="slideBackground"
-                style={{
-                    backgroundImage: `url('${slide.image}')`
-                }}
-            />
             <div
                 className="slideContent"
                 style={{
@@ -153,9 +147,4 @@ function ComponentCarrousel() {
     );
 }
 
-ReactDOM.render(
-    <React.StrictMode>
-        <ComponentCarrousel />
-    </React.StrictMode>,
-    document.body.appendChild(document.createElement("carrousel"))
-);
+export default ComponentCarrousel;

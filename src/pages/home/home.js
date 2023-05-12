@@ -4,7 +4,12 @@ import Carrousel from './carrousel/carrousel.js';
 
 function Home() {
     return (
-        <Carrousel />
+        <div className="principal">
+            <div className="carrousel">
+                <Carrousel />
+            </div>
+            <p>Hola</p>
+        </div>
     );
 }
 

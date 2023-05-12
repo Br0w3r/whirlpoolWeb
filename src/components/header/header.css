@@ -1,5 +1,5 @@
 .header-class {
-    width: 100vw;
+    --width: 100vw;
     height: 180px;
     display: flex;
     align-items: flex-start;

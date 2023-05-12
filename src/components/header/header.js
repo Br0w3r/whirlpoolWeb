@@ -11,12 +11,11 @@ function SingleHeader() {
     //#region BackGround Header
     <div className="header-class">
 
-      {/*
       <img
         className="logo-page"
         src={require('../../images/logo-whir.png')}
         alt="Logo"
-      />*/}
+      />
 
       {/*Container Contacts*/}
       <ContainerContacst />
