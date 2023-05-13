@@ -1,42 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import './navBar.css';
+import './navBar.scss';
 
 function SingleNavBar() {
     return (
-        <div className="navBar-container">
-
-            <div className="navBar-options">
-                <li className="navBar-margin">
-                    <NavLink
-                        className="nav-link"
-                        to="/"
-                    >
-                        Inicio
-                    </NavLink>
-                </li>
-
-                <li className="navBar-margin">
-                    <NavLink
-                        className="nav-link"
-                        to="/services"
-                    >
-                        Servicios
-                    </NavLink>
-                </li>
-
-                <li className="navBar-margin">
-                    <NavLink
-                        className="nav-link"
-                        to="/contact"
-                    >
-                        Solicitar Visita Técnica
-                    </NavLink>
-                </li>
-
-            </div>
-
-        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">Contact</a></li>
+                <li><a href="#!">Faq</a></li>
+            </ul>
+        </nav>
     );
 }
 
