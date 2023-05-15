@@ -4,12 +4,29 @@ import './navBar.scss';
 
 function SingleNavBar() {
     return (
-        <nav>
+        <nav className="style-nav">
             <ul class="menu">
-                <li><a href="#!">Home</a></li>
-                <li><a href="#!">About</a></li>
-                <li><a href="#!">Contact</a></li>
-                <li><a href="#!">Faq</a></li>
+                <li>
+                    <NavLink
+                        className="nav-link"
+                        to="/">
+                        Inicio
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className="nav-link"
+                        to="/services">
+                        Servicios
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className="nav-link"
+                        to="/contact">
+                        Contacto
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

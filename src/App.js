@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter basename='/whirlpoolWeb'>
       <SingleHeader />
-      <SingleNavBar />
+      {/*<SingleNavBar />*/}
       <Routes>
         <Route path='/' Component={Home} />
       </Routes>

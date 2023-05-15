@@ -11,74 +11,75 @@ function SingleHeader() {
     //#region BackGround Header
     <div className="header-class">
 
-      <img
-        className="logo-page"
-        src={require('../../images/logo-whir.png')}
-        alt="Logo"
-      />
+      <div className="header-logo">
+        <img
+          className="logo-page"
+          src={require('../../images/logo-whir.png')}
+          alt="Logo"
+        />
+      </div>
+
 
       {/*Container Contacts*/}
-      <ContainerContacst />
+      <div className="header-contacts">
+        <ContainerContacst />
+      </div>
+
     </div>
   );
 }
 
 function ContainerContacst() {
   return (
-    <div className="header-contacts">
+    <div className="container-row">
 
-      {/* Create Row */}
-      <div className="container-row">
-
-        {/* Create Column */}
-        <div className="container-column" style={{ marginRight: 15, marginLeft: 25 }}>
-          <div className="container-column">
-            <FaWhatsapp style={{ marginTop: 25, color: "#f7b100" }} size="45px" />
-          </div>
-          <div className="container-column-width">
-            <div style={{ marginTop: 22 }}>
-              <p className="title-text">WhatsApp</p>
-              <p className="subtitle-text">56-2418-1610</p>
-            </div>
-          </div>
-          <div className="container-column">
-            <RxDividerVertical style={{ marginTop: 25, color: "#424242" }} size="45px" />
-          </div>
-        </div>
-        {/* End Column */}
-
-        <div className="container-column" style={{ marginRight: 15 }}>
-          <div className="container-column">
-            <BsFillPhoneVibrateFill style={{ marginTop: 25, color: "#f7b100" }} size="45px" />
-          </div>
-          <div className="container-column-width">
-            <div style={{ marginTop: 22 }}>
-              <p className="title-text">Atención a Clientes</p>
-              <p className="subtitle-text">56-2418-1610</p>
-            </div>
-          </div>
-          <div className="container-column">
-            <RxDividerVertical style={{ marginTop: 25, color: "#424242" }} size="45px" />
-          </div>
-        </div>
-
+      {/* Create Column */}
+      <div className="container-column">
         <div className="container-column">
-          <div className="container-column">
-            <MdEmail style={{ marginTop: 25, color: "#f7b100" }} size="45px" />
-          </div>
-          <div className="container-column-width">
-            <div style={{ marginTop: 22 }}>
-              <p className="title-text">Email</p>
-              <p className="subtitle-text">gamerbrower@gmail.com</p>
-            </div>
-          </div>
-          <div className="container-column">
-            <RxDividerVertical style={{ marginTop: 25, color: "#424242" }} size="45px" />
+          <FaWhatsapp className="icon-class" />
+        </div>
+        <div className="container-column-width">
+          <div style={{ marginTop: 22 }}>
+            <p className="title-text">WhatsApp</p>
+            <p className="subtitle-text">56-2418-1610</p>
           </div>
         </div>
-
+        <div className="container-column">
+          <RxDividerVertical className="icon-divider-class" />
+        </div>
       </div>
-      {/* End Row */}
+      {/* End Column */}
+
+      <div className="container-column">
+        <div className="container-column">
+          <BsFillPhoneVibrateFill className="icon-class" />
+        </div>
+        <div className="container-column-width">
+          <div style={{ marginTop: 22 }}>
+            <p className="title-text">Atención a Clientes</p>
+            <p className="subtitle-text">56-2418-1610</p>
+          </div>
+        </div>
+        <div className="container-column">
+          <RxDividerVertical className="icon-divider-class" />
+        </div>
+      </div>
+
+      <div className="container-column">
+        <div className="container-column">
+          <MdEmail className="icon-class" />
+        </div>
+        <div className="container-column-width">
+          <div style={{ marginTop: 22 }}>
+            <p className="title-text">Email</p>
+            <p className="subtitle-text">gamerbrower@gmail.com</p>
+          </div>
+        </div>
+        <div className="container-column">
+          <RxDividerVertical className="icon-divider-class" />
+        </div>
+      </div>
+
     </div>
   );
 }
