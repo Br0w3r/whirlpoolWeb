@@ -5,7 +5,7 @@ import './navBar.scss';
 function SingleNavBar() {
     return (
         <nav className="style-nav">
-            <ul class="menu">
+            <ul className="menu">
                 <li>
                     <NavLink
                         className="nav-link"

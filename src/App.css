@@ -16,10 +16,3 @@ body {
   justify-content: flex-start;
   text-align: center;
 }
-
-.container-header {
-  min-height: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
