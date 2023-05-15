@@ -8,15 +8,6 @@ function Home() {
             <div className="carrousel">
                 <Carrousel />
             </div>
-            <div className="carrousel">
-                <Carrousel />
-            </div>
-            <div className="carrousel">
-                <Carrousel />
-            </div>
-            <div className="carrousel">
-                <Carrousel />
-            </div>
         </div>
     );
 }

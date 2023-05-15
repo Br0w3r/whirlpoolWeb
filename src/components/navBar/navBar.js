@@ -32,5 +32,4 @@ function SingleNavBar() {
     );
 }
 
-
 export default SingleNavBar;

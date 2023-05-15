@@ -57,7 +57,7 @@
     transform-style: preserve-3d;
     transform: translateZ(2rem);
     transition: opacity 0.3s linear;
-    text-shadow: 0 0.5rem 1rem #f5af00;
+    text-shadow: 0 0.5rem 1rem #000;
     opacity: 0;
 
     .slideSubtitle,
@@ -104,5 +104,26 @@
             transition: none;
             transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
         }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .slideContent {
+        height: 75vh;
+        width: 35vw;
+    }
+
+    .slideContentInner {
+
+        .slideSubtitle,
+        .slideTitle {
+            font-size: 12pt;
+        }
+
+        .slideDescription {
+            font-size: 10pt;
+        }
+
     }
 }
