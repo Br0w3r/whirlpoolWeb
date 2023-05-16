@@ -46,7 +46,13 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .barPublish {
-        flex-direction: column;
+    .principal {
+        .barPublish {
+            flex-direction: column;
+        }
+
+        .whoWeAre {
+            flex-direction: column;
+        }
     }
 }

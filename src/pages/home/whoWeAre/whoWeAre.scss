@@ -5,11 +5,14 @@
     display: flex;
     flex-direction: row;
     margin: 50px;
+    align-items: center;
+    justify-content: space-between;
 
     .who-column {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 45%;
 
         .who-title-text {
             font-size: 18.5px;
@@ -66,6 +69,109 @@
         }
     }
 
-    
-    
+    .who-images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: auto;
+        --margin-left: 50px;
+
+        .images-right {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            border-radius: 16px;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            justify-content: flex-end;
+
+            .card {
+                border-radius: 16px;
+                width: 245px;
+                height: 245px;
+                background-position: 25% !important;
+                background-size: cover !important;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 1.5px 10px rgba(#484848, 0.95);
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    background-color: rgba(#000, .60);
+                }
+
+                .img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                }
+
+                span {
+                    width: 100%;
+                    transition: .5s;
+                    background-position: 55% !important;
+                    background-size: cover !important;
+                }
+            }
+
+            .card:hover {
+                .img>span {
+                    transform: translateY(-100%);
+                }
+
+                .content {
+                    transform: translateY(0%);
+                    transition: 1s;
+                    transition-delay: .1s;
+                }
+            }
+
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: #f7b100;
+                text-shadow: 1px 1px black;
+                padding: 20px 20px;
+                height: inherit;
+                transform: translateY(100%);
+                font-size: 9pt;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .who-row {
+        flex-direction: column;
+        margin: 15px;
+
+        .who-column {
+            width: 100%;
+        }
+
+        .who-images {
+            flex-direction: column;
+
+            .images-right {
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+                margin-top: 40px !important;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
 }
