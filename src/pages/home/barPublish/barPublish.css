@@ -4,36 +4,55 @@
     display: flex;
     flex-direction: row;
     height: 100px;
-    padding-top: 10px;
 
     .container-column-barPublish {
-        float: left;
-        height: 100%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 25px;
+        background-color: #ffb224;
+        margin: 10px;
+        align-items: flex-end;
 
         .icon-class-barPublish {
             color: #000;
             font-size: 45px;
-            margin-top: 20px;
-            margin-left: 30px;
         }
+    }
+
+    .container-column-barPublish:hover {
+        background-color: #ffe56c;
+
+        .container-column-width-barPublish .title-bar-text,
+        .subtitle-bar-text {
+            color: #000;
+            text-shadow: 0.9px 1px #fff;
+        }
+
+        .icon-class-barPublish {
+            color: #191919;
+        }
+
+
     }
 
     .container-column-width-barPublish {
         float: left;
         height: 100%;
         text-align-last: start;
-        margin-left: 8px;
+        margin-right: 5px;
 
         .title-bar-text {
             font-size: 10pt;
-            color: #000;
+            color: #fafcfc;
+            text-shadow: 1.5px 0.98px #000;
             font-weight: bold;
             text-align: left;
             margin-top: 4px;
         }
 
         .subtitle-bar-text {
-            color: #fff;
+            color: #fafcfc;
+            text-shadow: 1.5px 0.98px #000;
             font-size: 11pt;
             font-weight: bold;
         }

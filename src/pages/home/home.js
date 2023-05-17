@@ -3,6 +3,7 @@ import './home.scss';
 import Carrousel from './carrousel/carrousel.js';
 import BarPublish from "./barPublish/barPublish";
 import WhoWeAre from "./whoWeAre/whoWeAre";
+import FootBar from "../../components/footBar/footBar";
 
 function Home() {
     return (
@@ -17,6 +18,10 @@ function Home() {
 
             <div className="whoWeAre">
                 <WhoWeAre />
+            </div>
+
+            <div className="footBar">
+                <FootBar />
             </div>
         </div>
     );
