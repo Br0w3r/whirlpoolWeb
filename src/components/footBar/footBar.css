@@ -3,14 +3,15 @@
     flex-direction: row;
     width: 100vw;
     justify-content: space-around;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     align-items: center;
+    padding: 10px;
 
     .foot-column {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
         text-align: center;
 
         .foot-title-text {
@@ -54,5 +55,47 @@
 
     .link-decoration {
         text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .foot-row {
+        flex-direction: column;
+
+        .foot-column {
+            width: 60%;
+            margin-top: 20px;
+
+            .logo-page {
+                padding-top: 30px;
+            }
+
+            .developer {
+                margin-top: 0px;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 680px) {
+    .foot-row {
+        flex-direction: column;
+
+        .foot-column {
+            width: 60%;
+            margin-top: 20px;
+
+            .logo-page {
+                padding-top: 30px;
+            }
+
+            .developer {
+                margin-top: 0px;
+            }
+        }
+
+
     }
 }

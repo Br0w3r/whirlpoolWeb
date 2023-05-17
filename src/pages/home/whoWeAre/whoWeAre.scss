@@ -154,7 +154,7 @@
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 589px) {
     .who-row {
         flex-direction: column;
         margin: 15px;
@@ -174,4 +174,24 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 590px) and (max-width: 1250px) {
+    .who-row {
+        flex-direction: column;
+        margin: 15px;
+
+        .who-column {
+            width: 100%;
+        }
+
+        .who-images {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
 }

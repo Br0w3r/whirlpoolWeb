@@ -34,51 +34,58 @@ function ContainerContacst() {
     <div className="container-row">
 
       {/* Create Column */}
-      <div className="container-column">
+      <a href="https://wa.me/+525624181610?text=Buenas+tardes+me+interesa+una+cotización+de+un+sito+web." className="link-decoration">
         <div className="container-column">
-          <FaWhatsapp className="icon-class" />
-        </div>
-        <div className="container-column-width">
-          <div style={{ marginTop: 22 }}>
-            <p className="title-text">WhatsApp</p>
-            <p className="subtitle-text">56-2418-1610</p>
+          <div className="container-column">
+            <FaWhatsapp className="icon-class" />
+          </div>
+          <div className="container-column-width">
+            <div>
+              <p className="title-text">WhatsApp</p>
+              <p className="subtitle-text">56-2418-1610</p>
+            </div>
+          </div>
+          <div className="container-column">
+            <RxDividerVertical className="icon-divider-class" />
           </div>
         </div>
-        <div className="container-column">
-          <RxDividerVertical className="icon-divider-class" />
-        </div>
-      </div>
+      </a>
       {/* End Column */}
 
-      <div className="container-column">
+      <a href="tel:+525624181610" className="link-decoration">
         <div className="container-column">
-          <BsFillPhoneVibrateFill className="icon-class" />
-        </div>
-        <div className="container-column-width">
-          <div style={{ marginTop: 22 }}>
-            <p className="title-text">Atención a Clientes</p>
-            <p className="subtitle-text">56-2418-1610</p>
+          <div className="container-column">
+            <BsFillPhoneVibrateFill className="icon-class" />
+          </div>
+          <div className="container-column-width">
+            <div>
+              <p className="title-text">Atención a Clientes</p>
+              <p className="subtitle-text">56-2418-1610</p>
+            </div>
+          </div>
+          <div className="container-column">
+            <RxDividerVertical className="icon-divider-class" />
           </div>
         </div>
-        <div className="container-column">
-          <RxDividerVertical className="icon-divider-class" />
-        </div>
-      </div>
+      </a>
 
-      <div className="container-column">
+      <a href="mailto:gamerbrower@gmail.com?subject=Servicio Nuevo
+               &body=Buenas tardes me interesa una cotización de un servicio de reparación." className="link-decoration">
         <div className="container-column">
-          <MdEmail className="icon-class" />
-        </div>
-        <div className="container-column-width">
-          <div style={{ marginTop: 22 }}>
-            <p className="title-text">Email</p>
-            <p className="subtitle-text">gamerbrower@gmail.com</p>
+          <div className="container-column">
+            <MdEmail className="icon-class" />
+          </div>
+          <div className="container-column-width">
+            <div>
+              <p className="title-text">Email</p>
+              <p className="subtitle-text">gamerbrower@gmail.com</p>
+            </div>
+          </div>
+          <div className="container-column">
+            <RxDividerVertical className="icon-divider-class" />
           </div>
         </div>
-        <div className="container-column">
-          <RxDividerVertical className="icon-divider-class" />
-        </div>
-      </div>
+      </a>
 
     </div>
   );

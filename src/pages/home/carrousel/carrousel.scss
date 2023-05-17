@@ -108,7 +108,7 @@
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 589px) {
     .slideContent {
         height: 65vh;
         width: 70vw;
@@ -128,6 +128,33 @@
 
         .slideDescription {
             font-size: 11pt;
+        }
+
+    }
+}
+
+@media only screen and (min-width: 590px) and (max-width: 1250px) {
+    .slideContent {
+        height: 65vh;
+        width: 70vw;
+    }
+
+    .slides>button {
+        width: 30rem;
+        height: 10rem;
+    }
+
+    .slideContentInner {
+
+        .slideSubtitle,
+        .slideTitle {
+            font-size: 25pt;
+            text-shadow: 2px 3px #000;
+        }
+
+        .slideDescription {
+            font-size: 20pt;
+            text-shadow: 3px 2px #000;
         }
 
     }

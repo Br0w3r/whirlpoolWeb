@@ -65,10 +65,13 @@ function FootBar() {
                     </div>
                 </a>
 
-                <div className="foot-contact-row">
-                    <MdEmail className="icon-foot" />
-                    <p className="foot-subtitle-text">gamerbrower@gmail.com</p>
-                </div>
+                <a href="mailto:gamerbrower@gmail.com?subject=Servicio Nuevo
+                            &body=Buenas tardes me interesa una cotización de un servicio de reparación." className="link-decoration">
+                    <div className="foot-contact-row">
+                        <MdEmail className="icon-foot" />
+                        <p className="foot-subtitle-text">gamerbrower@gmail.com</p>
+                    </div>
+                </a>
 
 
                 <div className="developer">
