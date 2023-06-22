@@ -20,7 +20,7 @@
         align-items: flex-end;
 
         .icon-class-barPublish {
-            color: #000;
+            color: #303030;
             font-size: 45px;
         }
     }
@@ -35,7 +35,7 @@
         }
 
         .icon-class-barPublish {
-            color: #191919;
+            color: #303030;
         }
 
 
@@ -50,7 +50,7 @@
 
         .title-bar-text {
             font-size: 10pt;
-            color: #fafcfc;
+            color: #000;
             text-shadow: 1.5px 0.98px #fff;
             font-weight: bold;
             text-align: left;
@@ -58,9 +58,9 @@
         }
 
         .subtitle-bar-text {
-            color: #fafcfc;
-            text-shadow: 2.5px 1px #000;
             font-size: 11pt;
+            color: #fff;
+            text-shadow: 1.5px 0.98px #000;
             font-weight: bold;
         }
     }
@@ -126,7 +126,7 @@
             flex-direction: row;
 
             .icon-class-barPublish {
-                color: #000;
+                color: #303030;
                 font-size: 30px;
             }
         }
