@@ -15,13 +15,13 @@
         display: flex;
         flex-direction: row;
         border-radius: 25px;
-        background-color: #ffb224;
+        background-color: #F7F7F7;
         margin: 10px;
         align-items: flex-end;
 
         .icon-class-barPublish {
-            color: #303030;
-            font-size: 45px;
+            color: #f7b100;
+            font-size: 36px;
         }
     }
 
@@ -35,7 +35,7 @@
         }
 
         .icon-class-barPublish {
-            color: #303030;
+            color: #f7b100;
         }
 
 
@@ -43,15 +43,16 @@
 
     .container-column-width-barPublish {
         text-align-last: start;
-        margin-right: 5px;
+        margin-right: 20px;
+        margin-left: 5px;
         display: flex;
         flex-direction: column;
         align-self: center;
 
         .title-bar-text {
-            font-size: 10pt;
+            font-size: 9pt;
             color: #000;
-            text-shadow: 1.5px 0.98px #fff;
+            text-shadow: 1.5px 0.90px #fff;
             font-weight: bold;
             text-align: left;
             margin-top: 4px;
@@ -59,14 +60,14 @@
 
         .subtitle-bar-text {
             font-size: 11pt;
-            color: #fff;
-            text-shadow: 1.5px 0.98px #000;
+            color: #000;
+            text-shadow: 1.5px 0.90px #fff;
             font-weight: bold;
         }
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 589px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
     .container-row-barPublish {
         width: 100vw;
         justify-content: normal;
@@ -82,7 +83,7 @@
             flex-direction: row;
 
             .icon-class-barPublish {
-                color: #303030;
+                color: #f7b100;
                 font-size: 30px;
             }
         }
@@ -91,10 +92,11 @@
             float: left;
             height: 100%;
             text-align-last: start;
-            margin-left: 8px;
+            margin-left: 4px;
+            margin-right: 20px;
 
             .title-bar-text {
-                font-size: 10pt;
+                font-size: 9pt;
                 color: #000;
                 font-weight: bold;
                 text-align: left;
@@ -102,7 +104,7 @@
             }
 
             .subtitle-bar-text {
-                color: #fff;
+                color: #000;
                 font-size: 12pt;
                 font-weight: bold;
             }
@@ -111,7 +113,7 @@
 }
 
 
-@media only screen and (min-width: 590px) and (max-width: 1250px) {
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
     .container-row-barPublish {
         width: 100vw;
         justify-content: space-around;
@@ -126,7 +128,7 @@
             flex-direction: row;
 
             .icon-class-barPublish {
-                color: #303030;
+                color: #f7b100;
                 font-size: 30px;
             }
         }
@@ -135,20 +137,21 @@
             float: left;
             height: 100%;
             text-align-last: start;
-            margin-left: 8px;
+            margin-left: 4px;
+            margin-right: 20px;
 
             .title-bar-text {
-                font-size: 8.5pt;
+                font-size: 7.5pt;
                 color: #000;
-                text-shadow: 1.5px 0.98px #fff;
+                text-shadow: 1.5px 0.9px #fff;
                 font-weight: bold;
                 text-align: left;
                 margin-top: 4px;
             }
 
             .subtitle-bar-text {
-                color: #fff;
-                text-shadow: 1.5px 0.98px #000;
+                color: #000;
+                text-shadow: 1.5px 0.95px #fff;
                 font-size: 11pt;
                 font-weight: bold;
             }

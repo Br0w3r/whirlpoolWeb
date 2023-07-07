@@ -47,11 +47,11 @@
                 align-items: center;
                 height: fit-content;
                 padding: 6px;
-                margin-right: 3px;
+                --margin-right: 3px;
 
                 .icon-class {
                     color: #f7b100;
-                    font-size: 45px;
+                    font-size: 40px;
                 }
 
                 .icon-divider-class {
@@ -104,7 +104,7 @@
 
 
 /* Media Screen Size */
-@media only screen and (min-width: 320px) and (max-width: 589px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
     .header-class {
         display: flex;
         flex-direction: column;
@@ -146,7 +146,7 @@
 
                     .icon-class {
                         color: #f7b100;
-                        font-size: 45px;
+                        font-size: 40px;
                         margin-top: 20px;
                     }
 
@@ -183,7 +183,7 @@
 }
 
 /* Media Screen Size */
-@media only screen and (min-width: 590px) and (max-width: 1250px) {
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
     .header-class {
         display: flex;
         flex-direction: column;
